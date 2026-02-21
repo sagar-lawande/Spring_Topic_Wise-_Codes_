@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    
+    <bean  class="in.study.spring.beans.Address" id="addObj">
+        <constructor-arg value="Maharashtra"/>
+         <constructor-arg value="Nashik"/>
+          <constructor-arg value="Sinner"/>
+        
+        
+         </bean>
+  
+         
+   
+    
+    <bean  class="in.study.spring.beans.Student" id="stdObj">
+    <constructor-arg value="1"/>
+    <constructor-arg value="Kiran"/>
+    <constructor-arg  ref="addObj"/>
+                    	
+        
+     </bean>
+    
+     
+
+</beans>
